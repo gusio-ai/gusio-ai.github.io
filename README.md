@@ -1,2 +1,2 @@
 # gusio-ai.github.io
-v
+Belajar membuat website. Biarpun sederhana, yang penting tetap elegan.
