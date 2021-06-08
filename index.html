@@ -14,7 +14,10 @@
   <link rel="stylesheet" type="text/css" href="public/css/sidenav-tengah.css" />
 
   <script src="public/js/home.js"></script>
+  <script src="public/js/header/header.js"></script>
+  <script src="public/js/content/content.js"></script>
   <script src="public/js/footer/footer.js"></script>
+
 <style>
 
 .sticky{
@@ -698,11 +701,13 @@ div.mj-hide {
 
 <main id="main" class="mj-wrapper row">
 	
-	<div class="wrapper">
+  <div class="wrapper">
     <div class="sliding-background"></div>
-</div>
+  </div>
+
 <!--sidebar-->
-	<div class="mj-col-3 mj-col-s-3 menu">
+
+  <div class="mj-col-3 mj-col-s-3 sidebar">
   
   <ul>
     <li>
@@ -741,15 +746,12 @@ div.mj-hide {
 </div>
 
 <!--content-->
-<div class="mj-col-6 mj-col-s-9">
-	<center>
-		<h1>KerajinanKu</h1>
-	</center>
+<div class="mj-col-6 mj-col-s-6 kontenku">
   
- <div mj-include-home="pages/home.html"></div>  
+ <div mj-include-home="assets/template/header/header.html"></div>  
   
   <div class="row">
-  	<div class="mj-col-12">
+    <div class="mj-col-12">
   	
     		<div class="mj-col-3">
     			<img style="width:100%; height:auto;" src="https://drive.google.com/uc?id=1HC9gBbZw8Z2vDfA74y1t-kIWv4jgLEKP" alt="figura"/>
@@ -762,16 +764,12 @@ div.mj-hide {
     		</div>
                 <div class="mj-col-3">
                    <img style="width:100%; height:auto;" src="https://drive.google.com/uc?id=1HJ_lxSmn8I6bscTaMWWJBSTGrQqzaRso" alt="tempat photo" />
+                </div>
     </div>
- 	</div>
-</div>
-
-
-
-   
+  </div>
 
 <!--asside-->
-<div class="mj-col-3 mj-col-s-12">
+  <div class="mj-col-3 mj-col-s-3">
     <div class="aside">
       <h2>Profil</h2>
       <p>kerajinanKU merupakan tempat pembuatan kerajinan yang di bangun atas kreativitas. Dan mayoritas bahan dasarnya memakai kayu.</p>
@@ -782,7 +780,9 @@ div.mj-hide {
     </div>
   </div>
 
+
 </main>
+
 
 
 <div mj-include-footer="assets/template/footer/footer.html"></div>
