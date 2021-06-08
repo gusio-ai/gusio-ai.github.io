@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/sidenav-right.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/sidenav-tengah.css" />
 
+  <script src="public/js/channel.js"></script>
 <style>
 
 .sticky{
@@ -744,7 +745,7 @@ div.mj-hide {
 		<h1>KerajinanKu</h1>
 	</center>
   
-  
+ <div mj-include-home="pages/home.html"></div>  
   
   <div class="row">
   	<div class="mj-col-12">
@@ -908,6 +909,10 @@ $(function() {
 });
 
   </script>
+
+<script>
+includeHome();
+</script>
 
 </body>
 </html>
