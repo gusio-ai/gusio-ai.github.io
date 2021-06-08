@@ -1,0 +1,41 @@
+/*sidenav left*/
+.sidenav-left {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 43px;
+  background: #008B8B;
+}
+.sidenav-left a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #FFEBCD;
+  display: block;
+  transition: 0.3s;
+  background: #008B8B;
+}
+
+.sidenav-left a:hover {
+  color: #f1f1f1;
+}
+.sidenav-left .closebtn {
+  position: absolute;
+  border: #FF7F50 solid;
+  padding: 4px 30px 4px 30px;
+  top: 5px;
+  right: -31px;
+  font-size: 25px;
+  color: #008B8B;
+  text-align: center;
+  background-color: #FFEBCD;
+  transform:rotate(45deg);
+  -ms-transform: rotate(45 deg);
+  -webkit-transform: rotate(45 deg);
+}
