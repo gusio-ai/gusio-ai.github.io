@@ -1,27 +1,66 @@
-function includeCorousel() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("mj-include-corousel");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("mj-include-corousel");
-          includeCorousel();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
-    }
-  }
-}
+$(document).ready(function(){
+	// Set Options
+	var speed = 500;			// Fade speed
+	var autoswitch = true;		// Auto slider options
+	var autoswitch_speed = 4000	// Auto slider speed
+	
+	// Add initial active class
+	$('.slide').first().addClass('active');
+	
+	// Hide all slides
+	$('.slide').hide();
+	
+	// Show first slide
+	$('.active').show();
+	
+	// Next Handler
+	$('#next').on('click', nextSlide);
+	
+	// Prev Handler
+	$('#prev').on('click', prevSlide);
+	
+	// Auto Slider Handler
+	if(autoswitch == true){
+		setInterval(nextSlide,autoswitch_speed);
+	}
+	
+	// Switch to next slide
+	function nextSlide(){
+		$('.active').removeClass('active').addClass('oldActive');
+		if($('.oldActive').is(':last-child')){
+			$('.slide').first().addClass('active');
+		} else {
+			$('.oldActive').next().addClass('active');
+		}
+		$('.oldActive').removeClass('oldActive');
+		$('.slide').fadeOut(speed);
+		$('.active').fadeIn(speed);
+	}
+	
+	// Switch to prev slide
+	function prevSlide(){
+		$('.active').removeClass('active').addClass('oldActive');
+		if($('.oldActive').is(':first-child')){
+			$('.slide').last().addClass('active');
+		} else {
+			$('.oldActive').prev().addClass('active');
+		}
+		$('.oldActive').removeClass('oldActive');
+		$('.slide').fadeOut(speed);
+		$('.active').fadeIn(speed);
+	}
+        });
+	
+	// Show first slide
+	$('.active').show();
+	
+	// Next Handler
+	$('#next').on('click', nextSlide);
+	
+	// Prev Handler
+	$('#prev').on('click', prevSlide);
+	
+	// Auto Slider Handler
+	if(autoswitch == true){
+		setInterval(nextSlide,autoswitch_speed);
+	}
