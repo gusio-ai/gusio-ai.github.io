@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-<!-- Slick CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-</head>
-<body>
-
-<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-      <img src="https://drive.google.com/uc?id=1HiHCUbU7iA8OtCG3vN7AwH5T51DjXhJ8" class="d-block w-100" alt="gambar">
-    </div>
-    <div class="carousel-item" data-interval="3000">
-      <img src="https://drive.google.com/uc?id=1HpDI9Y4L2OjrT2JVIpTYc99aJtXzT60w" class="d-block w-100" alt="gambar">
-    </div>
-    <div class="carousel-item">
-      <img src="https://drive.google.com/uc?id=1HnX4QZKGxyKP8e5oZ_Gcb7hNGRfewPRG" class="d-block w-100" alt="gambar">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Slick JS -->    
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <script>
-  $('.carousel').carousel()
-    </script>
-
-$(document).ready(function(){
-    $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2500,
-    dots: true
-    });
-});
-</body>
+	<head>
+		<title>jQuery Content Slider</title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>jQuery Content Slider</h1>
+			</header>
+			<img src="img/arrow-left.png" alt="Prev" id="prev">
+			<div id="slider">
+				<div class="slide">
+					<div class="slide-copy">
+						<h2>Slider One</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.</p>
+					</div>
+					<img src="img/slide1.jpg">
+				</div>
+				
+				<div class="slide">
+					<div class="slide-copy">
+						<h2>Slider Two</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.</p>
+					</div>
+					<img src="img/slide2.jpg">
+				</div>
+				
+				<div class="slide">
+					<div class="slide-copy">
+						<h2>Slider Three</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.</p>
+					</div>
+					<img src="img/slide3.jpg">
+				</div>
+				
+				<div class="slide">
+					<div class="slide-copy">
+						<h2>Slider Four</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.</p>
+					</div>
+					<img src="img/slide4.jpg">
+				</div>
+				
+				<div class="slide">
+					<div class="slide-copy">
+						<h2>Slider Five</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.</p>
+					</div>
+					<img src="img/slide5.jpg">
+				</div>
+			</div>
+			<img src="img/arrow-right.png" alt="Next" id="next">
+		</div>
+	</body>
 </html>
