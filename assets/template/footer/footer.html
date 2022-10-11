@@ -1,19 +1,69 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
-  <title>Template Footer</title>
-  <link rel="stylesheet" type="text/css" href="../../../../public/css/sidenav-left.css">
-  <link rel="stylesheet" type="text/css" href="../../../../public/css/sidenav-tengah.css">
-  <link rel="stylesheet" type="text/css" href="../../../../public/css/sidenav-right.css">
-  <link rel="stylesheet" type="text/css" href="../../../../public/css/sub-menu.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body{
+    background-color: #48D1CC;
+  }
+    .footer {
+	display:flex;
+  align-items:center;
+}
+.footer::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.my-logo {
+	float: left;
+	margin: 5px;
+	margin-right: 10px;
+}
+.nama-logo {
+	font-size: 25px;
+        color: #FFA500;
+}
+.nama-logo::after {
+	content: "KU";
+	display: inline-block;
+	color: #A52A2A;
+	margin-left: -8px;
+	font-size: 34px;
+}
+.submenu{
+  list-style-type: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+.submenu li {
+  padding: 2px;
+  margin-bottom: 7px;
+  color: #ffffff;
+  font-size: 1.4em;
+}
+  </style>
+  <title></title>
 </head>
 
 <body>
-     <!-- Ini untuk tampilan footer-->
-     <p>
-          Footer sukses di tampilkan
-     </p>
+  <div class="footer">
+    <div class="my-logo">
+      <img style="width:40px; height: 35px" src="https://drive.google.com/uc?id=1HQQkAZLZeS7slRuMZwIvzvskfRxwFtLP">
+    </div>
+    <div class="nama-logo">
+      kerajinan
+    </div>
+  </div>
+  <ul class="submenu">
+    <li><a style="text-decoration:none" href="#">Profil</a></li>
+    <li><a style="text-decoration:none" href="#">Tata Kelola</a></li>
+    <li><a style="text-decoration:none" href="#">Laporan</a></li>
+    <li><a style="text-decoration:none" href="#">Kontak</a></li>
+  </ul>
 </body>
+
 </html>
