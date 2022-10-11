@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filterable Image Gallery | CodingNepal</title>
+  <link rel="stylesheet" href="../../css/gallery/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- filter Items -->
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="aquarium">Aquarium</span>
+        <span class="item" data-name="figura">Figura</span>
+        <span class="item" data-name="asbak">Asbak</span>
+        <span class="item" data-name="mahar">Mahar</span>
+        <span class="item" data-name="rak">Rak</span>
+      </div>
+    </nav>
+    <!-- filter Images -->
+    <div class="gallery">
+      <div class="image" data-name="aquarium"><span><img src="../../assets/img/aquarium.jpg" alt=""></span></div>
+      <div class="image" data-name="figura"><span><img src="../../assets/img/aquarium2.jpg" alt=""></span></div>
+      <div class="image" data-name="asbak"><span><img src="../../assets/img/aquarium3.jpg" alt=""></span></div>
+      <div class="image" data-name="mahar"><span><img src="../../assets/img/aquarium4.jpg" alt=""></span></div>
+      <div class="image" data-name="aquarium"><span><img src="../../assets/img/aquarium5.jpg" alt=""></span></div>
+      <div class="image" data-name="rak"><span><img src="../../assets/img/aquarium.jpg" alt=""></span></div>
+      <div class="image" data-name="asbak"><span><img src="../../assets/img/aquarium2.jpg" alt=""></span></div>
+      <div class="image" data-name="mahar"><span><img src="../../assets/img/aquarium3.jpg" alt=""></span></div>
+    </div>
+  </div>
+  <!-- fullscreen img preview box -->
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image Category: <p></p></span>
+      <span class="icon fas fa-times"></span>
+    </div>
+    <div class="image-box"><img src="" alt=""></div>
+  </div>
+  <div class="shadow"></div>
+  <script src="../../js/gallery/script.js"></script>
+</body>
+
+</html>
